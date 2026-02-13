@@ -1,1 +1,1 @@
-web: gunicorn --bind :$PORT app:server
+web: python seed.py && gunicorn --bind :$PORT app:server
